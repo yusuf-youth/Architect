@@ -1,0 +1,37 @@
+@use "helpers" as *;
+
+:root {
+  --color-light: #fff;
+  --color-light-alt: #f9f9f9;
+  --color-dark: #000;
+
+  --color-gray: #8d8d8d;
+  --color-gray-1: #333333;
+  --color-gray-2: #2c2c2c;
+  --color-gray-3: #4f4f4f;
+  --color-gray-4: #bdbdbd;
+  --color-gray-5: #e0e0e0;
+  --color-gray-6: #f2f2f2;
+  --color-gray-7: #f3f3f3;
+
+  --color-red: #c30000;
+
+  --font-family-base: "Roboto", sans-serif;
+
+  --container-width: 1170px;
+  --container-padding-x: 15px;
+
+  --viewport-width: 1440px;
+
+  --section-padding-y: 60px;
+
+  --input-height: 46px;
+  --button-height: 64px;
+  --header-height: 102px;
+
+  --transition-duration: 0.2s;
+
+  @include mobile {
+    --section-padding-y: 40px;
+  }
+}

@@ -1,0 +1,30 @@
+.contacts {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  column-gap: 30px;
+  row-gap: 50px;
+
+  &__info-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 35px;
+    max-width: 340px;
+  }
+
+  &__header {
+    margin-bottom: 0;
+  }
+
+  &__group {
+    &-title {
+      font-size: 18px;
+      color: var(--color-gray-1);
+    }
+
+    &-text {
+      font-weight: 300;
+    }
+  }
+}

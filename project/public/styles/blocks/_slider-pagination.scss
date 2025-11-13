@@ -1,0 +1,35 @@
+@use "../helpers/" as *;
+
+.slider-pagination {
+  @include fluid-text(24, 20);
+
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+
+  &__separator {
+    color: var(--color-gray-5);
+
+    svg {
+      --size: 40px;
+
+      @include square(var(--size));
+
+      @include laptop {
+        --size: 30px;
+      }
+
+      @include tablet {
+        --size: 25px;
+      }
+
+      @include mobile {
+        --size: 20px;
+      }
+    }
+  }
+
+  &__total-slides {
+    color: var(--color-gray-4);
+  }
+}

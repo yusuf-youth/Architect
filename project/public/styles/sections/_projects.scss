@@ -1,0 +1,29 @@
+@use "../helpers/" as *;
+
+.projects {
+  &__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: fluid(60, 30);
+    margin-bottom: fluid(60, 30);
+
+    @include mobile {
+      align-items: center;
+    }
+  }
+
+  &__controls {
+    display: flex;
+    align-items: center;
+    column-gap: fluid(30, 22);
+
+    @include laptop {
+      margin-left: fluid(30, 10);
+    }
+
+    @include mobile {
+      justify-content: end;
+      margin-right: fluid(30, 10);
+    }
+  }
+}

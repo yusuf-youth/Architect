@@ -1,0 +1,29 @@
+@use "normalize";
+@use "fonts";
+@use "variables";
+@use "utils";
+@use "globals";
+
+@use "sections/App";
+@use "sections/header";
+@use "sections/content";
+@use "sections/project-slider";
+@use "sections/about";
+@use "sections/mission";
+@use "sections/projects-gallery";
+@use "sections/contact-us";
+@use "sections/footer";
+@use "sections/gallery";
+@use "sections/projects";
+@use "sections/sample-project";
+@use "sections/certifications";
+@use "sections/contacts";
+
+@use "blocks/burger-button";
+@use "blocks/title-block";
+@use "blocks/slider-buttons";
+@use "blocks/slider-pagination";
+@use "blocks/button";
+@use "blocks/field";
+@use "blocks/logo";
+@use "blocks/project-card";

@@ -1,0 +1,56 @@
+@use "../helpers/" as *;
+
+.header {
+  &__inner {
+    display: flex;
+    align-items: center;
+    height: var(--header-height);
+
+    @include laptop {
+      height: fluid(90, 70);
+    }
+  }
+
+  &__logo {
+    margin-right: auto;
+  }
+
+  &__menu {
+    &-list {
+      display: flex;
+      align-items: center;
+      column-gap: fluid(60, 30);
+    }
+
+    &-link {
+      position: relative;
+      display: flex;
+      align-items: center;
+      height: 50px;
+      font-size: 12px;
+
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        background-color: var(--color-gray-1);
+      }
+
+      &::before {
+        top: 15px;
+      }
+
+      &::after {
+        top: 32px;
+      }
+
+      &.is-active {
+        &::before,
+        &::after {
+          height: 0.5px;
+        }
+      }
+    }
+  }
+}

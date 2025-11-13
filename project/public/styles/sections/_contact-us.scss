@@ -1,0 +1,49 @@
+@use "../helpers/" as *;
+
+.contact-us {
+  margin-bottom: fluid(120, 40);
+
+  &__header {
+    margin-bottom: 22px;
+  }
+
+  &__body {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30px;
+
+    @include mobile {
+      flex-direction: column;
+      row-gap: 30px;
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    max-width: 390px;
+    width: 100%;
+
+    @include tablet {
+      max-width: 310px;
+    }
+
+    @include mobile {
+      max-width: 390px;
+      margin-inline: auto;
+    }
+  }
+
+  &__field {
+    &--textarea {
+      margin-bottom: fluid(75, 20);
+    }
+  }
+
+  &__image-area {
+    @include mobile {
+      order: -1;
+    }
+  }
+}

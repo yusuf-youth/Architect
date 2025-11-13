@@ -1,0 +1,31 @@
+@use "../helpers/" as *;
+
+.field {
+  max-width: 390px;
+
+  &--select {
+    color: var(--color-gray);
+    appearance: none;
+  }
+
+  &--select,
+  &__input {
+    width: 100%;
+    height: var(--input-height);
+    padding-left: 20px;
+    background-color: var(--color-gray-7);
+    border: none;
+    outline: none;
+
+    &::placeholder {
+      color: var(--color-gray);
+    }
+
+    &--textarea {
+      height: fluid(147, 100);
+      padding-block: 14px;
+      padding-inline: 20px;
+      resize: none;
+    }
+  }
+}

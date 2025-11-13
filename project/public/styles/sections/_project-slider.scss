@@ -1,0 +1,33 @@
+@use "../helpers/" as *;
+
+.project-slider {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 30px;
+
+  @include mobile {
+    flex-direction: column;
+    row-gap: fluid(35, 25);
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: fluid(90, 60);
+  }
+
+  &__image-container {
+    position: relative;
+  }
+
+  &__button {
+    position: absolute;
+    bottom: 0;
+  }
+
+  &__controls {
+    display: flex;
+    justify-content: space-between;
+  }
+}

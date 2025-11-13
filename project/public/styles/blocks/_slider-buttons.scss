@@ -1,0 +1,37 @@
+@use "../helpers/" as *;
+
+.slider-buttons {
+  display: flex;
+  align-items: center;
+  column-gap: fluid(22, 18);
+
+  &__button {
+    --size: 53px;
+
+    @include reset-button;
+    @include square(var(--size));
+    @include flex-center(true);
+    @include hover-effect;
+
+    background-color: var(--color-light);
+    border: 1px solid var(--color-gray-6);
+    transition-property: border-color;
+
+    @include hover {
+      opacity: 1;
+      border-color: var(--color-gray-4);
+    }
+
+    @include laptop {
+      --size: 48px;
+    }
+
+    @include tablet {
+      --size: 44px;
+    }
+
+    @include mobile {
+      --size: 40px;
+    }
+  }
+}

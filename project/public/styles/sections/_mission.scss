@@ -1,0 +1,39 @@
+@use "../helpers/" as *;
+
+.mission {
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: fluid(50, 30);
+
+    @include mobile {
+      flex-direction: column;
+      align-items: start;
+      row-gap: 20px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    column-gap: fluid(30, 20);
+  }
+
+  &__number {
+    @include fluid-text(200, 120);
+
+    font-weight: 600;
+    color: var(--color-gray-4);
+  }
+
+  &__text {
+    font-size: fluid(22, 18);
+    line-height: 1.6;
+    color: var(--color-gray-1);
+
+    @include mobile-above {
+      max-width: 420px;
+    }
+  }
+}

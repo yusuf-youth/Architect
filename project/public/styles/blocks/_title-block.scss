@@ -1,0 +1,11 @@
+.title-block {
+  &__pretitle {
+    font-weight: 300;
+    color: var(--color-gray-4);
+  }
+
+  &__title {
+    font-weight: 600;
+    color: var(--color-gray-1);
+  }
+}

@@ -1,0 +1,44 @@
+@use "../helpers/" as *;
+
+.sample-project {
+  &__body {
+    display: grid;
+    grid-template-areas:
+      "top-img top-img"
+      "mid-img text"
+      "bottom-img bottom-img";
+    gap: 30px;
+
+    @include tablet {
+      grid-template-areas:
+        "top-img top-img"
+        "mid-img mid-img"
+        "text text"
+        "bottom-img bottom-img";
+    }
+  }
+
+  &__img {
+    &:first-child {
+      grid-area: top-img;
+    }
+
+    &:nth-child(2) {
+      grid-area: mid-img;
+
+      @include tablet {
+        max-width: 100%;
+        width: 50%;
+      }
+    }
+
+    &:last-child {
+      grid-area: bottom-img;
+    }
+  }
+
+  &__text {
+    font-weight: 300;
+    line-height: 1.55;
+  }
+}

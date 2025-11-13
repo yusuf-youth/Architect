@@ -1,0 +1,86 @@
+@use "../helpers/" as *;
+
+.projects-gallery {
+  display: flex;
+  flex-direction: column;
+
+  &__grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: fluid(30, 20);
+
+    @include laptop {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @include mobile {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__item {
+    position: relative;
+  }
+
+  &__image-wrapper {
+    @include laptop {
+      width: 100%;
+    }
+  }
+
+  &__image {
+    @include laptop {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+    }
+
+    @include mobile {
+      height: 230px;
+    }
+  }
+
+  &__item,
+  &__image-wrapper,
+  &__image {
+    @include mobile {
+      width: 100%;
+    }
+  }
+
+  &__overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: fluid(80, 20);
+    color: var(--color-light);
+    background-color: transparent;
+    opacity: 0;
+    transition-property: all;
+    transition-duration: 0.5s;
+
+    @include hover {
+      opacity: 1;
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    &-title {
+      max-width: 200px;
+      color: currentColor;
+    }
+
+    &-button {
+      height: 24px !important;
+      padding-left: 0 !important;
+      color: currentColor;
+    }
+  }
+
+  &__button {
+    align-self: flex-end;
+  }
+}
