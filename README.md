@@ -30,6 +30,6 @@ The project has several features that are worth paying attention to.
 <h3>React</h3>
 <ul>
     <li>
-        <b>Reusable Components. </b> This project utilizes TypeScript to create robust, reusable components like <code>Button</code> and <code>TitleBlock</code>, facilitating predictable state management and faster, more maintainable development.
+        <b>Reusable Components. </b> This project utilizes TypeScript to create robust, reusable components like <code>Button</code>, <code>TitleBlock</code>, <code>SliderPagination</code> and so on, facilitating predictable state management and faster, more maintainable development.
     </li>
 </ul>
