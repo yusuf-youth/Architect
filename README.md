@@ -5,8 +5,6 @@ This is a sleek, modern Single Page Application (SPA) built for a conceptual arc
 <h2>Project Features</h2>
 The project has several features that are worth paying attention to. 
 
-    &#8594;
-
 <h3>Markup & Styles</h3>
 <ul>
   <li>
@@ -27,4 +25,11 @@ The project has several features that are worth paying attention to.
   <li>
     <b>Accessibility. </b>The project incorporates WAI-ARIA best practices and keyboard navigation to ensure a usable experience for people using assistive technologies.
   </li>
+</ul>
+
+<h3>React</h3>
+<ul>
+    <li>
+        <b>Reusable Components. </b> This project utilizes TypeScript to create robust, reusable components like <code>Button</code> and <code>TitleBlock</code>, facilitating predictable state management and faster, more maintainable development.
+    </li>
 </ul>
