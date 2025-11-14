@@ -39,6 +39,10 @@ The project has several features that are worth paying attention to.
         <b>Dynamic Rendering. </b> Content within the application is rendered dynamically by consuming structured data directly from the <code>data.tsx</code> file, which allows for easy updates and separation of concerns between presentation and information.
     </li>
     <li>
+    <li>
+        <b>Routing. </b> The application utilizes <code>react-router-dom</code> to implement client-side routing, allowing for instant, seamless page switching without full browser reloads, thus providing a true Single Page Application (SPA) experience.
+    </li>
+    <li>
         <b>Asset Management. </b> All visual assets, including icons and images, are centralized in <code>icons.tsx</code> and <code>images.ts</code> files, where they are imported and represented as reusable React components for straightforward and consistent use throughout the entire project.
     </li>
 </ul>
