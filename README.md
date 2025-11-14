@@ -5,6 +5,8 @@ This is a sleek, modern Single Page Application (SPA) built for a conceptual arc
 <h2>Project Features</h2>
 The project has several features that are worth paying attention to. 
 
+    &#8594;
+
 <h3>Markup & Styles</h3>
 <ul>
   <li>
