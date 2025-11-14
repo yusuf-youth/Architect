@@ -25,6 +25,9 @@ The project has several features that are worth paying attention to.
   <li>
     <b>Accessibility. </b>The project incorporates WAI-ARIA best practices and keyboard navigation to ensure a usable experience for people using assistive technologies.
   </li>
+  <li>
+    <b>Fluid Design. </b>The project implements a fluid design function to dynamically adjust property values based on the viewport size, effectively replacing the need for redundant media queries in most styling scenarios.
+  </li>
 </ul>
 
 <h3>TypeScript & React</h3>
