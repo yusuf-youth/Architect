@@ -27,9 +27,18 @@ The project has several features that are worth paying attention to.
   </li>
 </ul>
 
-<h3>React</h3>
+<h3>TypeScript & React</h3>
 <ul>
     <li>
+        <b>Typing. </b> The project leverages TypeScript features like <code>type</code> and <code>interface</code> declarations to enforce strict typing across all data structures and components, which significantly enhances code predictability and reduces runtime errors.
+    </li>
+    <li>
         <b>Reusable Components. </b> This project utilizes TypeScript to create robust, reusable components like <code>Button</code>, <code>TitleBlock</code>, <code>SliderPagination</code> and so on, facilitating predictable state management and faster, more maintainable development.
+    </li>
+    <li>
+        <b>Dynamic Rendering. </b> Content within the application is rendered dynamically by consuming structured data directly from the <code>data.tsx</code> file, which allows for easy updates and separation of concerns between presentation and information.
+    </li>
+    <li>
+        <b>Asset Management. </b> All visual assets, including icons and images, are centralized in <code>icons.tsx</code> and <code>images.ts</code> files, where they are imported and represented as reusable React components for straightforward and consistent use throughout the entire project.
     </li>
 </ul>
